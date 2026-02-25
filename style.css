@@ -1,0 +1,290 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES INDUSTRIALES
+========================= */
+:root {
+    --bg-main: #1c2628;
+    --bg-secondary: #0f1a1c;
+    --bg-card: #1e2c2f;
+    --bg-card-hover: #26383c;
+    --border-card: #2f3f42;
+    --border-card-hover: #3e5a5f;
+    --text-main: #ffffff;
+    --text-muted: #b0c4c8;
+    --accent: #3e7c84;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: var(--bg-main);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-main) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    background: url("taller.jpg") center/cover no-repeat;
+    padding: 140px 20px;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    background-color: #0f1f22;
+    color: var(--text-main);
+
+}
+
+.nosotros h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.nosotros p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.nosotros-box {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-card);
+    text-align: center;
+}
+
+.nosotros-box h5 {
+    margin-bottom: 15px;
+
+}
+
+.nosotros-box ul {
+    padding-left: 18px;
+    list-style: none;
+
+}
+
+.nosotros-box li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+ 
+
+}
+
+/* =========================
+   SISTEMA DE CARD INDUSTRIAL
+========================= */
+.card-industrial {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+    color: var(--text-main);
+    border: 1px solid var(--border-card);
+    transition: all 0.3s ease;
+}
+
+.card-industrial:hover {
+    transform: translateY(-6px);
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-card-hover);
+}
+
+.card-industrial h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-industrial p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.card-industrial ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.card-industrial ul li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* =========================
+   SECCIÓN OIL & GAS
+========================= */
+.oilgas {
+    background-color: var(--bg-secondary);
+}
+
+.norma-principal {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.normas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.normas span {
+    background: #2a3d40;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.subnormas {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* =========================
+   SECCIÓN MATERIALES
+========================= */
+.materiales {
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto strong {
+    margin-right: 8px;
+}
+
+#contacto h2, p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    border: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: var(--bg-secondary);
+    padding: 30px 0;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* =========================
+   BOTÓN WHATSAPP FLOTANTE
+========================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 40px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
