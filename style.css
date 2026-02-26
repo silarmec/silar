@@ -47,10 +47,11 @@ section {
 }
 
 .accent-line {
-    width: 60px;
+    width: 100px;
     height: 3px;
     background: var(--accent);
     margin: 15px auto;
+    
 }
 
 /* =========================
@@ -84,7 +85,7 @@ section {
    HERO
 ========================= */
 .hero {
-    background: url("taller.jpg") center/cover no-repeat;
+    background: url("img/taller.jpg") center/cover no-repeat;
     padding: 140px 20px;
     text-align: center;
     background-blend-mode: overlay;
@@ -255,6 +256,35 @@ section {
 iframe {
     border: none;
 }
+
+/* =========================
+   GALERIA
+========================= */
+
+.gallery-img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    height: 250px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.modal-dialog {
+    max-width: fit-content;
+}
+
+.modal-body img {
+    max-height: 80vh;
+    width: auto;
+    display: block;
+}
+
 
 /* =========================
    FOOTER
